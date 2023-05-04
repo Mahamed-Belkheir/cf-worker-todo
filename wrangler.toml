@@ -1,0 +1,8 @@
+name = "cf-worker-test"
+main = "src/index.ts"
+compatibility_date = "2023-05-03"
+
+[[d1_databases]]
+binding = "todo_db"
+database_name = "todos"
+database_id = "todos"
