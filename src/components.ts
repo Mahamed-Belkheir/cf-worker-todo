@@ -1,6 +1,6 @@
 import htm from "htm";
 import vhtml from "vhtml";
-import { TodoItem } from ".";
+import { TodoItem } from "./index";
 
 const html = htm.bind(vhtml);
 
@@ -31,7 +31,7 @@ export function renderTodos(todos: TodoItem[]) {
             fd.append(\`id\`, event.target.id);
             fd.append(\`done\`, event.target.checked);
             fetch(\`/toggle\`, {
-                method: \`PUT\`,
+                method: \`PATCH\`,
                 body: fd
             })
             .then(function(response) {

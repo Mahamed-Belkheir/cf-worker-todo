@@ -16,8 +16,12 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@dikur/hono": "^0.1.0",
+    "@dikur/http": "^0.1.1",
     "better-sqlite3": "^8.3.0",
+    "hono": "^3.1.8",
     "htm": "^3.1.1",
+    "reflect-metadata": "^0.1.13",
     "vhtml": "^2.2.0"
   }
 }
